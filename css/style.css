@@ -1,0 +1,19 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #121212;
+}
+
+.wrapper{
+    background-color: #161616;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.child{
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    background-color: #222325;
+    box-shadow: 0 31px 35px rgb(0 0 0);
+}
