@@ -6,10 +6,43 @@
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/afbebc8cbf.js" crossorigin="anonymous"></script>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
     <body>
         <header>
-            <i class="fas fa-thumbtack"></i>
+            <div id="page-icon" class="animate__animated animate__pulse">
+                <div class="main-icon">
+                    <img src="static/doge.png" alt="doge_icon">
+                </div>
+                <div class="main-heading">
+                    <h1>
+                        Doge Studio
+                    </h1>
+                </div>
+            </div>
+            <div id="favourites">
+                <a href="#">
+                    <span>
+                        <i class="fas fa-heart"></i>
+                    </span>
+                    <span>
+                        Favourites
+                    </span>
+                </a>
+            </div>
+            <div class="header-search">
+                <form action="">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <input type="text" name="search" placeholder="search">
+                    <button type="submit"><i class="fas fa-microphone"></i></button>
+                </form>
+            </div>
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="user-profile">
+                <i class="fas fa-user"></i>
+            </div>
         </header>
         <div>
             <main>

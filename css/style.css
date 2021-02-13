@@ -2,12 +2,132 @@ body{
     padding: 0;
     margin: 0;
     background-color: #121212;
+    color: white;
+    font-family: 'Open Sans'
 }
-
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+/*header*/
+header{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr 0.5fr 0.5fr;
+    text-align: center;
+    padding: 0.67em 0;
+}
+/*Logo*/
+#page-icon{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-left: 0.5em; */
+}
+.main-icon{
+    width: 50px;
+    height: 50px;
+}
+.main-icon img{
+    width: 100%;
+}
+#page-icon h1{
+    font-size: 1.5em;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+#page-icon h1:hover{
+    color: var(--orange);
+}
+/*Favourites-section*/
+#favourites{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#favourites a{
+    text-decoration: none;
+    font-size: 0.9em;
+    color: var(--white);
+}
+#favourites a:hover{
+    color: var(--orange);
+}
+/*searchbar*/
+.header-search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-search form input{
+    background-color: #222325;
+    border: none;
+    outline: none;
+    padding: 1px;
+    color: var(--white);
+    width: 12em;
+    height: 2em;
+}
+.header-search form button{
+    color: white;
+    background-color: #222325;
+    border: none;
+    font-size: 0.91em;
+    height: 2em;
+    outline: none;
+}
+.header-search form button:nth-of-type(1){
+    margin-right: -5px;
+    border-radius: 1.2rem 0 0 1.2rem;
+}
+.header-search form button:nth-of-type(2){
+    margin-left: -5px;
+    border-radius: 0 1.2rem 1.2rem 0;
+}
+/*notification*/
+.notification{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.notification i{
+    font-size: 1.3em;
+}
+/*user-profile*/
+.user-profile{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.user-profile i{
+    font-size: 1.3em;
+}
 .wrapper{
     background-color: #161616;
     height: 100vh;
-    width: 100vw;
     overflow: hidden;
 }
 .child{
@@ -15,5 +135,5 @@ body{
     width: 200px;
     margin: 50px;
     background-color: #222325;
-    box-shadow: 0 31px 35px rgb(0 0 0);
+    box-shadow: 0 31px 35px rgb(1,1,1);
 }
