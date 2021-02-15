@@ -21,14 +21,14 @@
                 </div>
             </div>
             <div id="favourites">
-                <a href="#">
+                <!-- <a href="#">
                     <span>
                         <i class="fas fa-heart"></i>
                     </span>
                     <span>
                         Favourites
                     </span>
-                </a>
+                </a> -->
             </div>
             <div class="header-search">
                 <form action="">
@@ -42,10 +42,14 @@
                 </form>
             </div>
             <div class="notification">
-                <i class="fas fa-bell"></i>
+                <span>
+                    <i class="fas fa-bell"></i>
+                </span>
             </div>
             <div class="user-profile">
-                <i class="fas fa-user"></i>
+                <span>
+                    <i class="fas fa-user"></i>
+                </span>
             </div>
         </header>
         <div id="main-body">
@@ -57,24 +61,99 @@
                     <div class="child">
     
                     </div>
-                </div>
-
-                
+                    <div class="child">
+    
+                    </div>
+                    <div class="child">
+    
+                    </div>
+                    <div class="child">
+    
+                    </div>
+                    <div class="child">
+    
+                    </div>
+                    <div class="child">
+    
+                    </div>
+                </div>                
             </main>
             <aside>
 
             </aside>
             <div class="media-control">
                 <div class="song-section">
-
+                    <div class="playing-album-art">
+                        <img src="static/album1.jpg" alt="thumbnail">
+                    </div>
+                    <div class="playing-singer-info">
+                        <div>
+                            <span>Division Bell</span>
+                        </div>
+                        <div>
+                            <span>Pink Floyd</span>
+                        </div>
+                    </div>
+                    <div class="playing-song-interactivities">
+                        <span>
+                            <i class="far fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fas fa-ban"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="control-section">
+                    <div class="button-section">
+                        <div class="random">
+                            <i class="far fa-random"></i>
+                        </div>
+                        <div class="previous">
+                            <i class="fas fa-step-backward"></i>
+                        </div>
+                        <div class="play-pause">
+                            <i class="fal fa-pause-circle large-icon"></i>
+                        </div>
+                        <div class="next">
+                            <i class="fas fa-step-forward"></i>
+                        </div>
+                        <div class="stop-song">
+                            <i class="fal fa-stop-circle"></i>
+                        </div>
+                    </div>
+                    <div class="song-duration">
+                        <div class="curr-time">
+                            3:58
+                        </div>
+                        <div class="timeline">
+                            <div class="percentage-complete">
 
+                            </div>
+                        </div>
+                        <div class="total-time">
+                            5:19
+                        </div>
+                    </div>
                 </div>
                 <div class="volume-control-section">
-                    
+                    <div class="podcast">
+                        <span>
+                        <i class="fad fa-waveform-path"></i>
+                        </span>
+                    </div>
+                    <div class="stream">
+                        <span>
+                            <i class="fas fa-stream"></i>
+                        </span>
+                    </div>
+                    <div class="volume-range">
+                        <span><i class="fal fa-volume-slash"></i></span>
+                        <input type="range" min="0" max="100" class="vol-slider">
+                        <span><i class="fal fa-volume-up"></i></span>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="js/icons.js"></script>
     </body>
 </html>
