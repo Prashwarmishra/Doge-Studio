@@ -3,7 +3,10 @@ body{
     margin: 0;
     background-color: #121212;
     color: white;
-    font-family: 'Open Sans'
+    font-family: 'Open Sans';
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 :root {
     --blue: #007bff;
@@ -144,9 +147,15 @@ header{
 #main-body{
     position: relative;
     display: grid;
-    grid-template-columns: 8fr 2fr;
+    grid-template-columns: 7.5fr 2.5fr;
 }
-
+main{
+    height: 100vh;
+    overflow: scroll;
+}
+main::-webkit-scrollbar{
+    display: none;
+}
 .wrapper{
     background-color: #161616;
     overflow: hidden;
@@ -156,6 +165,7 @@ header{
     width: 90%;
     margin: 50px;
     background-color: #222325;
+    border-radius: 20px;
     box-shadow: 0 31px 35px rgb(1,1,1);
 }
 
@@ -219,6 +229,86 @@ aside{
     font-weight: 900;
 }
 
+/*aside*/
+aside{
+    padding-right: 10px;
+    height: 100vh;
+    overflow: scroll;
+}
+aside::-webkit-scrollbar{
+    display: none;
+}
+.queue-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 4%;
+}
+.queue-heading>h1{
+    font-size: 1.2em;
+    letter-spacing: 0.02em;
+}
+.queue-heading>p{
+    font-size: 1em;
+}
+.queue-song-wrapper{
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    grid-row-gap: 7px;
+    /* justify-content: center; */
+}
+.queue-child{
+    width: 90%;
+    min-height: 2.7em;
+    background-color: #222325;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #000;
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    grid-column-gap: 2px;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+}
+.queue-child:hover{
+    transform: scale(1.05);
+}
+.queue-index{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+.queue-song-img{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+.queue-song-img img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #222325;
+    border-radius: 0.4em;
+}
+
+.queue-song-name{
+    font-size: 0.85em;
+}
+.queue-song-artist{
+    font-size: 0.6em;
+}
+
+.queue-song-like span{
+    font-size: 0.9em;
+    transition: all 250ms ease-in-out;
+}
+.queue-song-like:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
 /*music-control-section*/
 .control-section{
     display: flex;
