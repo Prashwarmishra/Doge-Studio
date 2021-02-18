@@ -4,10 +4,11 @@ body{
     background-color: #121212;
     color: white;
     font-family: 'Open Sans';
+    /* scrollbar-width: none; */
 }
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
     display: none;
-}
+} */
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -150,29 +151,190 @@ header{
     grid-template-columns: 7.5fr 2.5fr;
 }
 main{
-    height: 100vh;
+    height: 80vh;
     overflow: scroll;
 }
 main::-webkit-scrollbar{
     display: none;
+}
+main{
+    scrollbar-width: none;
 }
 .wrapper{
     background-color: #161616;
     overflow: hidden;
 }
 .child{
-    min-height: 200px;
-    width: 90%;
-    margin: 50px;
+    min-height: 150px;
+    max-width: 90%;
+    margin: 50px auto;
     background-color: #222325;
     border-radius: 20px;
     box-shadow: 0 31px 35px rgb(1,1,1);
 }
+/*carousel*/
+.section-heading{
+    width: 90%;
+    margin: auto;
+}
+/*head-carousel*/
+.head-carousel{
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    max-width: 90%;
+    margin: auto;
+    background-color: rgb(22, 22, 22);
+    border-radius: 1em;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+.head-carousel>div{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0;
+    align-items: center;
+}
+.head-carousel>div a{
+    text-decoration: none;
+    color: var(--white);
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    font-size: 3em;
+    z-index: 2;
+}
+.head-carousel>div a:nth-of-type(1){
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0,0,0,0), rgba(0,0,0,0.1));
+}
+.head-carousel>div a:nth-of-type(2){
+    right: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0.1));
+}
+.item{
+    position: relative;
+    margin: 2px;
+    transition: all 250ms ease;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+}
+.item:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
 
-
+.description{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 97%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em 3em;
+    border-radius: 3%;
+    font-size: 1em;
+    color: transparent;
+}
+.description:hover{
+    color: white;
+    background-color: #80808030;
+}
+.play-album{
+    display: flex;
+    justify-content: center;
+}
+.play-album>span{
+    font-size: 3em;
+    transition: all 250ms ease-in-out;
+}
+.play-album>span:hover{
+    transform: scale(1.3);
+}
+/*aside*/
 
 aside{
     background: repeating-linear-gradient( to top left, black, transparent 189px);
+    padding-right: 10px;
+    height: 80vh;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+aside::-webkit-scrollbar{
+    display: none;
+}
+.queue-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 4%;
+}
+.queue-heading>h1{
+    font-size: 1.2em;
+    letter-spacing: 0.02em;
+}
+.queue-heading>p{
+    font-size: 1em;
+}
+.queue-song-wrapper{
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    grid-row-gap: 7px;
+    /* justify-content: center; */
+}
+.queue-child{
+    width: 90%;
+    min-height: 2.7em;
+    background-color: #222325;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #000;
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    grid-column-gap: 2px;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+}
+.queue-child:hover{
+    transform: scale(1.05);
+}
+.queue-index{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+}
+.queue-song-img{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+.queue-song-img img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #222325;
+    border-radius: 0.4em;
+}
+.queue-song-name{
+    font-size: 0.85em;
+}
+.queue-song-artist{
+    font-size: 0.6em;
+}
+.queue-song-like span{
+    font-size: 0.9em;
+    transition: all 250ms ease-in-out;
+}
+.queue-song-like:hover{
+    transform: scale(1.3);
+    cursor: pointer;
 }
 /*media-control*/
 .media-control{
@@ -229,91 +391,15 @@ aside{
     font-weight: 900;
 }
 
-/*aside*/
-aside{
-    padding-right: 10px;
-    height: 100vh;
-    overflow: scroll;
-}
-aside::-webkit-scrollbar{
-    display: none;
-}
-.queue-heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 4%;
-}
-.queue-heading>h1{
-    font-size: 1.2em;
-    letter-spacing: 0.02em;
-}
-.queue-heading>p{
-    font-size: 1em;
-}
-.queue-song-wrapper{
-    display: grid;
-    grid-template-rows: repeat(1fr);
-    grid-row-gap: 7px;
-    /* justify-content: center; */
-}
-.queue-child{
-    width: 90%;
-    min-height: 2.7em;
-    background-color: #222325;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 5px 10px 10px #000;
-    display: grid;
-    grid-template-columns: 1fr 2fr 6fr 1fr;
-    grid-column-gap: 2px;
-    justify-content: center;
-    align-items: center;
-    transition: all 250ms ease-in-out;
-}
-.queue-child:hover{
-    transform: scale(1.05);
-}
-.queue-index{
-    display: flex;
-    justify-content: center;
-    font-size: 0.9em;
-}
-
-.queue-song-img{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-}
-.queue-song-img img{
-    height: 100%;
-    width: 100%;
-    border: 1px solid #222325;
-    border-radius: 0.4em;
-}
-
-.queue-song-name{
-    font-size: 0.85em;
-}
-.queue-song-artist{
-    font-size: 0.6em;
-}
-
-.queue-song-like span{
-    font-size: 0.9em;
-    transition: all 250ms ease-in-out;
-}
-.queue-song-like:hover{
-    transform: scale(1.3);
-    cursor: pointer;
-}
 /*music-control-section*/
 .control-section{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    transition: all 250ms ease-in-out;
+}
+.control-section:hover{
+    transform: scale(1.05);
 }
 .button-section{
     padding-top: 5px;
@@ -340,10 +426,6 @@ aside::-webkit-scrollbar{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     padding-bottom: 10px;
-    transition: all 50ms ease-in-out;
-}
-.song-duration:hover{
-    transform: scale(1.1);
 }
 .curr-time{
     display: flex;
@@ -372,7 +454,13 @@ aside::-webkit-scrollbar{
     display: grid;
     grid-template-columns: 1fr 1fr 5fr;
     align-items: center;
-    transition: all 500ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+.volume-control-section:hover{
+    transform: scale(1.1);
+}
+.volume-control-section>div{
+    transition: all 250ms ease-in-out;
 }
 .volume-control-section>div:hover{
     transform: scale(1.2);
