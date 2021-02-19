@@ -4,7 +4,6 @@ body{
     background-color: #121212;
     color: white;
     font-family: 'Open Sans';
-    /* scrollbar-width: none; */
 }
 /* body::-webkit-scrollbar{
     display: none;
@@ -167,15 +166,24 @@ main{
 .child{
     min-height: 150px;
     max-width: 90%;
-    margin: 50px auto;
+    margin: 5px auto 25px;
     background-color: #222325;
     border-radius: 20px;
+    padding: 10px;
     box-shadow: 0 31px 35px rgb(1,1,1);
 }
 /*carousel*/
 .section-heading{
     width: 90%;
     margin: auto;
+}
+.section-heading>h1{
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+}
+.margin-neg{
+    margin-bottom: -10px;
 }
 /*head-carousel*/
 .head-carousel{
@@ -243,7 +251,7 @@ main{
 }
 .description:hover{
     color: white;
-    background-color: #80808030;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .play-album{
     display: flex;
@@ -256,6 +264,98 @@ main{
 .play-album>span:hover{
     transform: scale(1.3);
 }
+/*latest-release*/
+.lr-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.2em;
+    
+}
+.lr-content{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 6fr 1fr;
+    background-color: #121212;
+    background: linear-gradient(-45deg, black, transparent);
+    border-radius: 1.2em;
+    transition: all 250ms;
+}
+.lr-content:hover{
+    transform: scale(1.03);
+}
+.lr-album-image{
+    height: 5em;
+    width: 5em;
+    margin: 5px auto;
+}
+.lr-album-image img{
+    height: 100%;
+    width: 100%;
+}
+.lr-album-name{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.lr-song-name{
+    font-size: 0.85em;
+}
+.lr-song-artist{
+    font-size: 0.6em;
+}
+.lr-song-interact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lr-song-like span{
+    font-size: 0.8em;
+}
+
+/*Popular-artist*/
+.pa-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 0.5em;
+}
+.pa-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 250ms ease-in-out;
+}
+.pa-content:hover{
+    transform: scale(1.1);
+}
+.pa-image{
+    width: 90%;
+    height: 90%;
+}
+.pa-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px 5px black;
+}
+.pa-name{
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
 /*aside*/
 
 aside{
@@ -292,6 +392,7 @@ aside::-webkit-scrollbar{
     width: 90%;
     min-height: 2.7em;
     background-color: #222325;
+    background: linear-gradient(-45deg, #222325, transparent);
     margin: auto;
     border-radius: 10px;
     box-shadow: 5px 10px 10px #000;
