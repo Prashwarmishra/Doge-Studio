@@ -380,9 +380,26 @@ main{
     z-index: 1;
     font-size: 1.2em;
 }
-
-
-
+/*popular-podcasts*/
+.pp-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 0.5em;
+}
+.pp-content{
+    transition: all 250ms ease-in-out;
+    height: 100%;
+    width: 100;
+}
+.pp-content img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    box-shadow: 10px 10px 30px 5px black;
+}
+.pp-content:hover{
+    transform: scale(1.1);
+}
 /*aside*/
 
 aside{
