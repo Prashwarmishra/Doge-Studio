@@ -152,6 +152,7 @@ header{
 main{
     height: 80vh;
     overflow: scroll;
+    /* margin: 25px 0; */
 }
 main::-webkit-scrollbar{
     display: none;
@@ -182,7 +183,7 @@ main{
     letter-spacing: 2px;
 }
 .margin-neg{
-    margin-bottom: -10px;
+    margin: 25px 0 -10px 51px;
 }
 /*head-carousel*/
 .head-carousel{
@@ -390,6 +391,7 @@ main{
     transition: all 250ms ease-in-out;
     height: 100%;
     width: 100;
+    position: relative;
 }
 .pp-content img{
     height: 100%;
@@ -399,6 +401,20 @@ main{
 }
 .pp-content:hover{
     transform: scale(1.1);
+}
+.pp-play{
+    position: absolute;
+    color: transparent;
+    top: 0;
+    padding: 3em 3.5em;
+    border-radius: 1.9em;
+}
+.pp-play:hover{
+    background-color: #80808030;
+    color: var(--white);
+}
+.pp-play span{
+    font-size: 2.5em;
 }
 /*aside*/
 
@@ -502,12 +518,13 @@ aside::-webkit-scrollbar{
     transform: scale(1.1);
 }
 .playing-album-art{
-    width: 50px;
-    height: 40px;
+    width: 70px;
+    height: 55px;
 }
 .playing-album-art img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 .playing-singer-info{
     box-sizing: border-box;
