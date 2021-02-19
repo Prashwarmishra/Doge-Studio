@@ -164,10 +164,9 @@ main{
     overflow: hidden;
 }
 .child{
-    min-height: 150px;
     max-width: 90%;
     margin: 5px auto 25px;
-    background-color: #222325;
+    /* background-color: #222325; */
     border-radius: 20px;
     padding: 10px;
     box-shadow: 0 31px 35px rgb(1,1,1);
@@ -179,7 +178,7 @@ main{
 }
 .section-heading>h1{
     margin: 0;
-    font-size: 1.8em;
+    font-size: 1.2em;
     letter-spacing: 2px;
 }
 .margin-neg{
@@ -349,10 +348,38 @@ main{
     font-size: 0.8em;
 }
 
-
-
-
-
+/*music-genre*/
+.mg-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 0.5em;
+}
+.mg-content{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 250ms ease-in-out;
+}
+.mg-content:hover{
+    transform: scale(1.1);
+}
+.mg-image{
+    width: 100%;
+    height: 100%;
+}
+.mg-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    box-shadow: 10px 10px 30px 5px black;
+}
+.mg-name{
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    font-size: 1.2em;
+}
 
 
 
