@@ -128,6 +128,9 @@ header{
 .notification span:hover{
     transform: scale(1.3);
 }
+.notification:hover .dropdown-menu{
+    display: block;
+}
 /*user-profile*/
 .user-profile{
     display: flex;
@@ -135,6 +138,7 @@ header{
     align-items: center;
     justify-content: center;
     transition: all 250ms ease-in-out;
+    position: relative;
 }
 .user-profile span{
     font-size: 1.3em;
@@ -142,7 +146,35 @@ header{
 .user-profile span:hover{
     transform: scale(1.3);
 }
-
+.user-profile:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    background-color: #121212;
+    z-index: 1;
+    text-align: end;
+    box-shadow: 2px 2px 4px 0px dimgrey;
+    border-radius: 0.3em;
+}
+.dropdown-menu>ul{
+    padding: 5px;
+    margin: 5px;
+}
+.dropdown-menu li{
+    list-style: none;
+    font-size: 0.9em;
+}
+.dropdown-menu li a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-menu li a:hover{
+    text-decoration: underline;
+}
 /*main-body*/
 #main-body{
     position: relative;
@@ -316,6 +348,20 @@ main{
     justify-content: center;
     align-items: center;
 }
+.lr-song-menu .dropdown-menu{
+    top: 50%;
+    right: 2%;
+    box-shadow: none;
+}
+.lr-song-menu .dropdown-menu ul{
+    padding: 2px;
+}
+.lr-song-menu .dropdown-menu li{
+    font-size: 0.7em;
+}
+.lr-song-menu:hover .dropdown-menu{
+    display: block;
+}
 .lr-song-like span{
     font-size: 0.8em;
 }
@@ -441,6 +487,9 @@ aside::-webkit-scrollbar{
 }
 .queue-heading>p{
     font-size: 1em;
+}
+.queue-heading #drop-icon:hover .dropdown-menu{
+    display: block;
 }
 .queue-song-wrapper{
     display: grid;
