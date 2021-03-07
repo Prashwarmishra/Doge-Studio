@@ -8,6 +8,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Prashwar Mishra">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <header>
@@ -122,7 +123,70 @@
         <div id="main-body">
             <main>
                 <div class="wrapper">
-                    <div class="carousel">
+
+
+                    <section class="mood-section">
+
+                        <div class="section-heading">
+                            <h1>Mood</h1>
+                        </div>
+                        <div class="carousel-parent">
+                            <div id="car-prev">
+                                <span >
+                                    <i class="fad fa-angle-left"></i>
+                                </span>
+                            </div>
+                            <div class="carousel">
+                                <div class="hideLeft">
+    
+                                    <img src="static/mood1.png" alt="mood-img">
+    
+                                </div>
+                                <div class="prev-left">
+    
+                                    <img src="static/mood2.png" alt="mood-img">
+    
+                                </div>
+                                <div class="prev">
+    
+                                    <img src="static/mood3.png" alt="mood-img">
+    
+                                </div>
+                                <div class="selected">
+    
+                                    <img src="static/mood7.png" alt="mood-img">
+    
+                                </div>
+                                <div class="next">
+    
+                                    <img src="static/mood5.png">
+                                </div>
+                                <div class="next-right">
+    
+                                    <img src="static/mood6.png" alt="mood-img">
+    
+                                </div>
+                                
+                                <div class="hideRight">
+    
+                                    <img src="static/mood4.png" alt="mood-img">
+    
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <button id="prev">Prev</button>
+                                <button id="next">Next</button>
+                              </div>
+
+                            <div id="car-next">
+                                <span>
+                                    <i class="fad fa-angle-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- <div class="carousel">
                         <div class="section-heading margin-neg">
                             <h1>Mood</h1>
                         </div>
@@ -264,8 +328,8 @@
     
                                 <a href="#first-sec">›</a>
                             </div>
-                        </div>
-                    </div>
+                        </div> 
+                    </div> -->
 
                     <div class="latest-release">
                         <div class="section-heading">
@@ -1374,5 +1438,6 @@
             </div>
         </div>
         <script src="js/icons.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
