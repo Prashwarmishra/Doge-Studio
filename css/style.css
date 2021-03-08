@@ -179,7 +179,7 @@ header{
 #main-body{
     position: relative;
     display: grid;
-    grid-template-columns: 7.5fr 2.5fr;
+    grid-template-columns: 7.75fr 2.25fr;
 }
 main{
     height: 80vh;
@@ -241,10 +241,8 @@ main{
 }
 .carousel>div{
     position: absolute;
+    transition: all 1s;
 }
-/* .carousel>div>img{
-    width: 200px;
-} */
 .hideLeft{
     left: 0;
     transform: translateX(-50%);
