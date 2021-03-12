@@ -195,6 +195,7 @@ main{
 .wrapper{
     background-color: #161616;
     overflow: hidden;
+    padding: 25px 0;
 }
 .child{
     max-width: 90%;
@@ -538,7 +539,7 @@ main{
     position: absolute;
     color: transparent;
     top: 0;
-    padding: 3em 3.5em;
+    padding: 3.2em 3.65em;
     border-radius: 1.9em;
 }
 .pp-play:hover{
@@ -620,6 +621,7 @@ aside::-webkit-scrollbar{
 }
 .queue-song-name{
     font-size: 0.85em;
+    font-weight: 500;
 }
 .queue-song-artist{
     font-size: 0.6em;
@@ -653,13 +655,12 @@ aside::-webkit-scrollbar{
     transform: scale(1.1);
 }
 .playing-album-art{
-    width: 70px;
-    height: 55px;
+    width: 60px;
+    height: 50px;
 }
 .playing-album-art img{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
 }
 .playing-singer-info{
     box-sizing: border-box;
@@ -679,10 +680,10 @@ aside::-webkit-scrollbar{
 .playing-song-interactivities span{
     font-size: 1em;
     padding: 5px;
-    transition: all 250ms;
+    transition: all 250ms ease-in-out;
 }
 .playing-song-interactivities span:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 .playing-song-interactivities span:hover i{
     font-weight: 900;
@@ -714,7 +715,7 @@ aside::-webkit-scrollbar{
     font-size: 1.8em;
 }
 .button-section>div:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 .song-duration{
     width: 100%;
@@ -759,9 +760,9 @@ aside::-webkit-scrollbar{
 .volume-control-section>div{
     transition: all 250ms ease-in-out;
 }
-.volume-control-section>div:hover{
-    transform: scale(1.2);
-}
+/* .volume-control-section>div:hover{
+    transform: scale(1.1);
+} */
 .volume-range{
     display: flex;
     align-items: center;
