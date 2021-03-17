@@ -990,11 +990,11 @@ aside::-webkit-scrollbar{
         font-size: 0.7em;
     }
     .header-search form input{
-        width: 50%;
+        width: 35%;
         height: 2em;
     }
     .header-search form input:hover{
-        width: 50%;
+        width: 35%;
     }
     .main-heading{
         display: none;
