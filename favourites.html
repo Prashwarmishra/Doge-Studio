@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Doge Studio | Favourites</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/afbebc8cbf.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prashwar Mishra">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAc7XOAJzGzgB7tdYAISkxAHO1xgB7tc4AhLXWAPf3/wAhKSkASnuUAHu1xgCEtc4AWq3WAIS1xgCMtc4AY63WABAYEABrrb0AY63OABghOQDW7+8Aa63OADFzpQBrrcYAUpy9AHOtzgBKnM4A5+/3ADlzpQBCc5QASqXWALXe5wBKnMYAc63GAFqcvQAYISEAvd7nAHutxgBSnMYAnNbeACEhIQBSpc4AQkpSAKXW3gBSpcYAY6W9AFqlzgCc1ucAWqXGAMbn5wBClL0Aa6W9ANbn9wApOTkAa5ytAGultQA5lMYASpS9AHOlvQApOUoAa3NzAEqUtQBrpcYAe5ytAIScnABSlLUAlM7eAIzO7wAxQkoAWpS1AJzO3gBzvd4AnM7WAHu93gA5jL0Apc7eAHu91gCczucApc7WAIS93gApMTkAMVprAIS91gD3//8Arc7WAEKMtQCUpaUAhL3OAIy91gD///8AOVqEAHOUpQCMxt4AjL3OAEqMrQBjtdYAa7XeAITG5wCUvc4AMXu1AEpjcwBrtdYAlMbWAJS9xgBrtc4AlMbOAJzG1gBztdYAlMbnADGEtQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATihYFkJCRgsOJgVYWWMGAAhdAWkaGC4uLiIiMTEBBgBaXVkBIiI0DF4mNC1kJxMAWkdZJhIYIiImYyYnM24hAAgsZUUJPDciD14MBjMzLwAVSVErXDg7DgsLDAwZOlAAJVUkKVdoagJPa14mPzE1AFQgJBFBQ1NdXk9MZ1MNWgBaMkpKUEgKK0BnAwYqKloAWjBHNmFsRj1SMS8TS2BaAFptRARNM1lTJy8QG2QIWgBaWmJhXRMjNCMtVhQ+WloAWlocEEoTOSoQbh1bW1RaAFpaWlofZDVUWloxXx5UWgBaWlpaZgdaWlpaWhYXWloAWlpaWmFaWlpaWlpaHFpaAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAA="
+        rel="icon" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="page-icon" class="animate__animated animate__pulse">
+            <div class="main-icon">
+                <a href="./index.html">
+                    <img src="static/doge.png" alt="doge_icon">
+                </a>
+            </div>
+            <div class="main-heading">
+                <a href="./index.html">
+                    <h1>
+                        Doge Studio
+                    </h1>
+                </a>
+            </div>
+        </div>
+        <div id="favourites">
+            <a href="./index.html">
+                <span>
+                    Home
+                </span>
+            </a>
+        </div>
+        <div class="header-search">
+            <form action="">
+                <a href="#">
+                    <i class="fas fa-microphone"></i>
+                </a>
+                <input type="text" name="search" placeholder="Search...">
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </form>
+        </div>
+        <div class="notification">
+            <div class="dropdown-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Create
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Liked
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Shazam
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Waveform
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Podcasts
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span>
+                <i class="fas fa-bell"></i>
+            </span>
+        </div>
+        <div class="user-profile">
+            <div class="dropdown-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Incognito
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Favourites
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Help
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span>
+                <i class="fas fa-user"></i>
+            </span>
+        </div>
+    </header>
+    <div id="main-body">
+        <main>
+            <div class="wrapper">
+                <div class="favourite-section">
+                    <div class="fav-child favourite-album">
+                        <div class="favourite-album-img">
+                            <img src="static/big-img.png" alt="">
+                            <div class="favourite-album-play">
+                                <span>
+                                    <i class="fas fa-play"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="favourite-album-info">
+                            <div class="favourite-album-heading">
+                                <div class="favourite-album-name">
+                                    <div class="section-heading">
+                                        <h1>Mike Posner</h1>
+                                        <small>American Singer</small>
+                                    </div>
+                                </div>
+                                <div class="favourite-album-followers">
+                                    <small>9.9M Followers</small>
+                                </div>
+                            </div>
+                            <div class="favourite-album-discription">
+                                <small>
+                                    Born in Detroit, Michigan, Posner has never shied away from telling folks where he’s
+                                    from.
+                                    Growing up with childhood friend Big Sean, music quickly grabbed his attention.
+                                    Garnering fame in August of 2010 with 31 Minutes to Take Off, he has quickly
+                                    established himself
+                                    as not only a singer of pop music but also a songwriter to big names.
+                                </small>
+                            </div>
+                            <div class="favourite-album-controls">
+                                <button type="submit">Play All</button>
+                                <span>Follow</span>
+                                <div class="favourite-tracks">
+                                    <small>19 Tracks | 4 Albums</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fav-child">
+                        <div class="favourite-songs-child">
+                            <div class="fs-serial">
+                                01
+                            </div>
+                            <div class="fs-image">
+                                <img src="static/fsc1.png" alt="album-img">
+                            </div>
+                            <div class="fs-name">
+                                <div class="fs-album-name">
+                                    <span>Lover</span>
+                                </div>
+                                <div class="fs-artist-name">
+                                    <small>Taylor Swift</small>
+                                </div>
+                            </div>
+                            <div class="fs-duration">
+                                <small>4:44</small>
+                            </div>
+                            <div class="fs-like">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="fs-add">
+                                <span><i class="far fa-plus"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="favourite-songs-child">
+                            <div class="fs-serial">
+                                02
+                            </div>
+                            <div class="fs-image">
+                                <img src="static/fsc2.png" alt="album-img">
+                            </div>
+                            <div class="fs-name">
+                                <div class="fs-album-name">
+                                    <span>X</span>
+                                </div>
+                                <div class="fs-artist-name">
+                                    <small>Ed Sheeran</small>
+                                </div>
+                            </div>
+                            <div class="fs-duration">
+
+                            </div>
+                            <div class="fs-like">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="fs-add">
+                                <span><i class="far fa-plus"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="favourite-songs-child">
+                            <div class="fs-serial">
+                                03
+                            </div>
+                            <div class="fs-image">
+                                <img src="static/fsc3.png" alt="album-img">
+                            </div>
+                            <div class="fs-name">
+                                <div class="fs-album-name">
+                                    <span>This Is Acting</span>
+                                </div>
+                                <div class="fs-artist-name">
+                                    <small>Sia</small>
+                                </div>
+                            </div>
+                            <div class="fs-duration">
+
+                            </div>
+                            <div class="fs-like">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="fs-add">
+                                <span><i class="far fa-plus"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="favourite-songs-child">
+                            <div class="fs-serial">
+                                04
+                            </div>
+                            <div class="fs-image">
+                                <img src="static/fsc4.png" alt="album-img">
+                            </div>
+                            <div class="fs-name">
+                                <div class="fs-album-name">
+                                    <span>Delirium</span>
+                                </div>
+                                <div class="fs-artist-name">
+                                    <small>Ellie Goudling</small>
+                                </div>
+                            </div>
+                            <div class="fs-duration">
+
+                            </div>
+                            <div class="fs-like">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="fs-add">
+                                <span><i class="far fa-plus"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="favourite-songs-child">
+                            <div class="fs-serial">
+                                05
+                            </div>
+                            <div class="fs-image">
+                                <img src="static/fsc5.png" alt="album-img">
+                            </div>
+                            <div class="fs-name">
+                                <div class="fs-album-name">
+                                    <span>Reputation</span>
+                                </div>
+                                <div class="fs-artist-name">
+                                    <small>Taylor Swift</small>
+                                </div>
+                            </div>
+                            <div class="fs-duration">
+
+                            </div>
+                            <div class="fs-like">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="fs-add">
+                                <span><i class="far fa-plus"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="favourite-songs-child">
+                            <div class="fs-serial">
+                                06
+                            </div>
+                            <div class="fs-image">
+                                <img src="static/fsc6.png" alt="album-img">
+                            </div>
+                            <div class="fs-name">
+                                <div class="fs-album-name">
+                                    <span>Tangled Up</span>
+                                </div>
+                                <div class="fs-artist-name">
+                                    <small>Thomas Rhett</small>
+                                </div>
+                            </div>
+                            <div class="fs-duration">
+
+                            </div>
+                            <div class="fs-like">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="fs-add">
+                                <span><i class="far fa-plus"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="favourite-songs-child">
+                            <div class="fs-serial">
+                                07
+                            </div>
+                            <div class="fs-image">
+                                <img src="static/fsc7.png" alt="album-img">
+                            </div>
+                            <div class="fs-name">
+                                <div class="fs-album-name">
+                                    <span>Free Spirit</span>
+                                </div>
+                                <div class="fs-artist-name">
+                                    <small>Khalid</small>
+                                </div>
+                            </div>
+                            <div class="fs-duration">
+
+                            </div>
+                            <div class="fs-like">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="fs-add">
+                                <span><i class="far fa-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-control">
+                    <div class="song-section">
+                        <div class="playing-album-art">
+                            <img src="static/weeknd.jpg" alt="thumbnail">
+                        </div>
+                        <div class="playing-singer-info">
+                            <div>
+                                <marquee scrollamount=2>Escape From LA</marquee>
+                            </div>
+                            <div>
+                                <span>The weeknd</span>
+                            </div>
+                        </div>
+                        <div class="playing-song-interactivities">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fas fa-ban"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control-section">
+                        <div class="button-section">
+                            <div class="random">
+                                <i class="far fa-random"></i>
+                            </div>
+                            <div class="previous">
+                                <i class="fas fa-step-backward"></i>
+                            </div>
+                            <div class="play-pause">
+                                <i class="fal fa-pause-circle large-icon"></i>
+                            </div>
+                            <div class="play-next">
+                                <i class="fas fa-step-forward"></i>
+                            </div>
+                            <div class="stop-song">
+                                <i class="far fa-stop-circle"></i>
+                            </div>
+                        </div>
+                        <div class="song-duration">
+                            <div class="curr-time">
+                                3:58
+                            </div>
+                            <div class="timeline">
+                                <div class="percentage-complete">
+
+                                </div>
+                            </div>
+                            <div class="total-time">
+                                5:19
+                            </div>
+                        </div>
+                    </div>
+                    <div class="volume-control-section">
+                        <div class="podcast">
+                            <span>
+                                <i class="fad fa-waveform-path"></i>
+                            </span>
+                        </div>
+                        <div class="stream">
+                            <span>
+                                <i class="fal fa-sliders-h"></i>
+                            </span>
+                        </div>
+                        <div class="volume-range">
+                            <span><i class="fal fa-volume-slash"></i></span>
+                            <input type="range" min="0" max="100" class="vol-slider">
+                            <span><i class="fal fa-volume-up"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="split-by-two">
+            <div class="similar-artist">
+                <div class="sa-heading">
+                    <div class="section-heading">
+                        <h1>Similar Artists</h1>
+                    </div>
+                    <div class="sa-view-all">
+                        <small>View All</small>
+                    </div>
+                </div>
+                <div class="sa-parent">
+                    <div class="sa-child">
+                        <div class="sa-img">
+                            <img src="static/sa1.png" alt="similar-artist-img">
+                        </div>
+                        <div class="sa-name">
+                            <div class="sa-artist-name">
+                                <span>Post Malone</span>
+                            </div>
+                            <div class="sa-genre">
+                                <span>Pop</span>
+                            </div>
+                        </div>
+                        <div class="sa-menu">
+                            <span><i class="fal fa-ellipsis-h"></i></span>
+                            <span>4:44</span>
+                        </div>
+                    </div>
+
+                    <div class="sa-child">
+                        <div class="sa-img">
+                            <img src="static/sa2.png" alt="similar-artist-img">
+                        </div>
+                        <div class="sa-name">
+                            <div class="sa-artist-name">
+                                <span>Folksy</span>
+                            </div>
+                            <div class="sa-genre">
+                                <span>Jazz</span>
+                            </div>
+                        </div>
+                        <div class="sa-menu">
+                            <span><i class="fal fa-ellipsis-h"></i></span>
+                            <span>5:00</span>
+                        </div>
+                    </div>
+
+                    <div class="sa-child">
+                        <div class="sa-img">
+                            <img src="static/sa3.png" alt="similar-artist-img">
+                        </div>
+                        <div class="sa-name">
+                            <div class="sa-artist-name">
+                                <span>Soverign</span>
+                            </div>
+                            <div class="sa-genre">
+                                <span>Rock</span>
+                            </div>
+                        </div>
+                        <div class="sa-menu">
+                            <span><i class="fal fa-ellipsis-h"></i></span>
+                            <span>3:24</span>
+                        </div>
+                    </div>
+
+                    <div class="sa-child">
+                        <div class="sa-img">
+                            <img src="static/sa4.png" alt="similar-artist-img">
+                        </div>
+                        <div class="sa-name">
+                            <div class="sa-artist-name">
+                                <span>Rainbow Rising</span>
+                            </div>
+                            <div class="sa-genre">
+                                <span>Metal</span>
+                            </div>
+                        </div>
+                        <div class="sa-menu">
+                            <span><i class="fal fa-ellipsis-h"></i></span>
+                            <span>4:59</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recently-played">
+                <div class="sa-heading">
+                    <div class="section-heading">
+                        <h1>Recently Played</h1>
+                    </div>
+                    <div class="sa-view-all">
+                        <small>View All</small>
+                    </div>
+                </div>
+                <div class="queue-song-wrapper">
+                    <div class="queue-child">
+                        <div class="queue-index">
+                            01
+                        </div>
+                        <div class="queue-song-img">
+                            <img src="static/rp1.png" alt="song">
+                        </div>
+                        <div class="queue-album-name">
+                            <div class="queue-song-name">
+                                <span>Royale</span>
+                            </div>
+                            <div class="queue-song-artist">
+                                <span>Lorde</span>
+                            </div>
+                        </div>
+                        <div class="queue-song-like">
+                            <span>
+                                <i class="fal fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="queue-child">
+                        <div class="queue-index">
+                            <i class="fal fa-waveform"></i>
+                        </div>
+                        <div class="queue-song-img">
+                            <img src="static/rp2.png" alt="song">
+                        </div>
+                        <div class="queue-album-name">
+                            <div class="queue-song-name">
+                                <span>Abby Road</span>
+                            </div>
+                            <div class="queue-song-artist">
+                                <span>The Beatles</span>
+                            </div>
+                        </div>
+                        <div class="queue-song-like">
+                            <span>
+                                <i class="fal fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="queue-child">
+                        <div class="queue-index">
+                            03
+                        </div>
+                        <div class="queue-song-img">
+                            <img src="static/rp3.png" alt="song">
+                        </div>
+                        <div class="queue-album-name">
+                            <div class="queue-song-name">
+                                <span>Gun Song</span>
+                            </div>
+                            <div class="queue-song-artist">
+                                <span>Caitlyn</span>
+                            </div>
+                        </div>
+                        <div class="queue-song-like">
+                            <span>
+                                <i class="fal fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="queue-child">
+                        <div class="queue-index">
+                            04
+                        </div>
+                        <div class="queue-song-img">
+                            <img src="static/rp4.png" alt="song">
+                        </div>
+                        <div class="queue-album-name">
+                            <div class="queue-song-name">
+                                <span>Broken Clocks</span>
+                            </div>
+                            <div class="queue-song-artist">
+                                <span>Krepford</span>
+                            </div>
+                        </div>
+                        <div class="queue-song-like">
+                            <span>
+                                <i class="fal fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="queue-child">
+                        <div class="queue-index">
+                            05
+                        </div>
+                        <div class="queue-song-img">
+                            <img src="static/rp5.png" alt="song">
+                        </div>
+                        <div class="queue-album-name">
+                            <div class="queue-song-name">
+                                <span>Beautiful People</span>
+                            </div>
+                            <div class="queue-song-artist">
+                                <span>Khalid</span>
+                            </div>
+                        </div>
+                        <div class="queue-song-like">
+                            <span>
+                                <i class="fal fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+
+    <script src="js/icons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
