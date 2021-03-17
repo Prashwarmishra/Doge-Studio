@@ -69,6 +69,7 @@ header{
 }
 /*Favourites-section*/
 #favourites{
+    font-size: 1em;
     display: flex;
     align-items: center;
 }
@@ -160,7 +161,7 @@ header{
     top: 80%;
     right: 5%;
     background-color: #121212;
-    z-index: 1;
+    z-index: 100;
     text-align: end;
     box-shadow: 2px 2px 4px 0px dimgrey;
     border-radius: 0.3em;
@@ -234,6 +235,7 @@ main{
     top: 40%;
     font-size: 3em;
     z-index: 10;
+    cursor: pointer;
 }
 #car-next span{
     right: 0%;
@@ -394,8 +396,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 0.2em;
-    
+    grid-gap: 0.2em; 
 }
 .lr-content{
     height: 100%;
@@ -440,6 +441,9 @@ main{
     justify-content: center;
     align-items: center;
 }
+.lr-song-menu:hover{
+    cursor: pointer;
+}
 .lr-song-menu .dropdown-menu{
     top: 50%;
     right: 2%;
@@ -462,7 +466,7 @@ main{
 .pa-container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 0.5em;
+    grid-gap: 0.5em;
 }
 .pa-content{
     display: flex;
@@ -523,7 +527,7 @@ main{
 .pp-container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 0.5em;
+    grid-gap: 0.5em;
 }
 .pp-content{
     transition: all 250ms ease-in-out;
@@ -975,4 +979,66 @@ aside::-webkit-scrollbar{
 }
 .recently-played .queue-song-wrapper::-webkit-scrollbar{
     display: none;
+}
+
+/*----------------MEDIA-QUERY----------------------*/
+@media screen and (max-width: 768px){
+    header{
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    }
+    #favourites{
+        font-size: 0.7em;
+    }
+    .header-search form input{
+        width: 50%;
+        height: 2em;
+    }
+    .header-search form input:hover{
+        width: 50%;
+    }
+    .main-heading{
+        display: none;
+    }
+    #main-body{
+        display: block;
+    }
+    .lr-container {
+        grid-template-columns: 1fr;
+    }
+    .pa-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .mg-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0.5em;
+    }
+    .pp-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pp-play {
+        padding: 2.2em 2.65em;
+        border-radius: 1.5em;
+    }
+    aside{
+        display: none;
+    }
+    .media-control {
+        grid-template-columns: 1fr 2fr;
+        padding: 0 1em;
+        box-sizing: border-box;
+    }
+    .volume-control-section{
+        display: none;
+    }
+    /*favourites*/
+    .favourite-section {
+        display: block;
+    }
+    .favourite-album{
+        display: block;
+    }
+    .favourite-songs-child {
+        grid-gap: 0.2em;
+        grid-template-columns: 2fr 2fr 10fr 2fr 3fr 3fr;
+    }
 }
