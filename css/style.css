@@ -249,7 +249,7 @@ main{
 }
 .carousel>div{
     position: absolute;
-    transition: all 1s;
+    transition: all 1s, z-index 0s;
 }
 .hideLeft{
     left: 0;
@@ -309,86 +309,8 @@ main{
     z-index: 3;
 }
 .selected img{
-    width: 250px;
+    width: 300px;
 }
-/* .head-carousel{
-    display: grid;
-    grid-template-columns: repeat(3, 100%);
-    overflow: hidden;
-    max-width: 90%;
-    margin: auto;
-    background-color: rgb(22, 22, 22);
-    border-radius: 1em;
-    align-items: center;
-    scroll-behavior: smooth;
-}
-.head-carousel>div{
-    width: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 20px 0;
-    align-items: center;
-}
-.head-carousel>div a{
-    text-decoration: none;
-    color: var(--white);
-    position: absolute;
-    text-align: center;
-    width: 50px;
-    font-size: 3em;
-    z-index: 2;
-}
-.head-carousel>div a:nth-of-type(1){
-    left: 0;
-    background: linear-gradient(-90deg, rgba(0,0,0,0), rgba(0,0,0,0.1));
-}
-.head-carousel>div a:nth-of-type(2){
-    right: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0.1));
-}
-.item{
-    position: relative;
-    margin: 2px;
-    transition: all 250ms ease;
-}
-.item img{
-    width: 100%;
-    height: 100%;
-    border-radius: 3%;
-}
-.item:hover{
-    transform: scale(1.2);
-    z-index: 1;
-}
-
-.description{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 97%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 1em 3em;
-    border-radius: 3%;
-    font-size: 1em;
-    color: transparent;
-}
-.description:hover{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.play-album{
-    display: flex;
-    justify-content: center;
-}
-.play-album>span{
-    font-size: 3em;
-    transition: all 250ms ease-in-out;
-}
-.play-album>span:hover{
-    transform: scale(1.3);
-} */
 
 /*latest-release*/
 .lr-container{
@@ -581,11 +503,13 @@ aside::-webkit-scrollbar{
     font-size: 1.2em;
     letter-spacing: 0.02em;
 }
-.queue-heading>p{
-    font-size: 1em;
-}
-.queue-heading #drop-icon:hover .dropdown-menu{
+.queue-tag:hover .dropdown-menu{
     display: block;
+    top: 12%;
+    right: 2%;
+}
+.queue-tag>p{
+    font-size: 1em;
 }
 .queue-song-wrapper{
     display: grid;
@@ -608,6 +532,11 @@ aside::-webkit-scrollbar{
     align-items: center;
     transition: all 250ms ease-in-out;
 }
+
+.queue-child:last-child{
+    margin-bottom: 1em;
+}
+
 .queue-child:hover{
     transform: scale(1.05);
 }
