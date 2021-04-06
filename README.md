@@ -8,45 +8,45 @@ Screenshots are provided below
 
 ### Screenshots:
 
-- **View-width > 768px **
+- View-width > 768px
 
 #### Home Page
 
-![](screenshots/01 index.png)
+![](screenshots/01_index.PNG)
 
-![](screenshots/02 index.png)
+![](screenshots/02_index.PNG)
 
-![](screenshots/03 index.png)
+![](screenshots/03_index.PNG)
 
-![](screenshots/04 index.png)
+![](screenshots/04_index.PNG)
 
 #### Favourites Page
 
-![](screenshots/05 favourites.png)
+![](screenshots/05_favourites.PNG)
 
-![](screenshots/06 favourites.png)
+![](screenshots/06_favourites.PNG)
 
-![](screenshots/07 favourites.png)
+![](screenshots/07_favourites.PNG)
 
 
-- **View-width < 768px **
+- View-width < 768px
 
 #### Home Page
 
-![](screenshots/08 mobile_index.png)
+![](screenshots/08_mobile_index.PNG)
 
-![](screenshots/09 mobile_index.png)
+![](screenshots/09_mobile_index.PNG)
 
-![](screenshots/10 mobile_index.png)
+![](screenshots/10_mobile_index.PNG)
 
-![](screenshots/11 mobile_index.png)
+![](screenshots/11_mobile_index.PNG)
 
 #### Favourites Page
 
-![](screenshots/12 mobile_favourites.png)
+![](screenshots/12_mobile_favourites.PNG)
 
-![](screenshots/13 mobile_favourites.png)
+![](screenshots/13_mobile_favourites.PNG)
 
-![](screenshots/14 mobile_favourites.png)
+![](screenshots/14_mobile_favourites.PNG)
 
-![](screenshots/15 mobile_favourites.png)
+![](screenshots/15_mobile_favourites.PNG)
